@@ -12,7 +12,7 @@ class Borracho_Tradicional(Borracho):
         super().__init__(nombre)
 
     def camina(self):
-        return random.choice([(0,1), (0,-1), (1,0), (-1,0)])
+        return random.choice([(0,1,0), (0,-1,0), (1,0,0), (-1,0,0), (0,0,1), (0,0,-1)])
         
 
 if __name__ == '__main__':
